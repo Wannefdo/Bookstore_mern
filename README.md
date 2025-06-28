@@ -44,7 +44,7 @@ Bookstore_mern/
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/your-username/bookstore_mern.git
+git clone https://github.com/Wannefdo/bookstore_mern.git
 ```
 
 2. **Backend Setup:**

@@ -19,6 +19,9 @@ app.use("/auth", authRoutes);
 app.use("/user", userRoutes);
 app.use("/orders", orderRoutes);
 
+// Get PORT with fallback
+const PORT = process.env.PORT || 3000;
+
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {

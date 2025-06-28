@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+/* Add this to your global CSS file */
+
+@media print {
+  /* Hide elements that are not part of the invoice */
+  .no-print {
+    display: none !important;
+  }
+
+  /* Optional: Adjust print layout */
+  body {
+    margin: 0; /* Remove default body margin */
+    padding: 0;
+  }
+
+  /* Ensure the main content container takes full width */
+  .container {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Remove shadows and borders that might not look good in print */
+  .shadow-lg,
+  .rounded-lg,
+  .border {
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* Keep table borders if desired */
+  table,
+  th,
+  td {
+    border: 1px solid #ccc !important;
+  }
+
+  /* Ensure table headers and rows are visible */
+  thead {
+    display: table-header-group;
+  }
+  tr {
+    page-break-inside: avoid;
+  }
+}
